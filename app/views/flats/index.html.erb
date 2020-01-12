@@ -1,0 +1,16 @@
+<!-- <h1>All our flats</h1>
+<% @flats.each do |flat| %>
+  <h2><%= flat.name %></h2>
+<% end %> -->
+
+<% @flats.each do |flat| %>
+<div class="col-4"></div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"><%= flat.address %></p>
+    <i class="fas fa-user-friends"></i>
+    <a href="#" class="btn btn-primary">More info</a>
+  </div>
+</div>
+<% end %>
